@@ -35,7 +35,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://twitter.com/"
+              href="https://x.com/Rafa164"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-accent transition-link"
