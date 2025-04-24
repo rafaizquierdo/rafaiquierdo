@@ -1,0 +1,93 @@
+import { motion } from "framer-motion";
+import About from "./About";
+import Contact from "./Contact";
+
+export default function Home() {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.6 }
+    }
+  };
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-28">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            className="max-w-4xl mx-auto"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.2
+                }
+              }
+            }}
+          >
+            <motion.h1 
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8 text-primary"
+              variants={fadeInUp}
+            >
+              No hay nada más difícil que abrir camino donde no lo hay. Pero tampoco hay nada más gratificante que conseguirlo.
+            </motion.h1>
+            
+            <motion.div 
+              className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 mb-12"
+              variants={fadeInUp}
+            >
+              <p className="text-lg md:text-xl font-medium text-amber-600 mb-4">
+                Advertencia: Si esperas alguna solución mágica, no la vas a encontrar. Aquí hablamos de lo que de verdad importa: compartir experiencias, aprender y, si encajamos, ver cómo puedo ayudarte.
+              </p>
+            </motion.div>
+            
+            <motion.div 
+              className="space-y-6 text-lg"
+              variants={fadeInUp}
+            >
+              <p>
+                En esta web no vas a encontrar un curso, una newsletter, ni una membresía. Solo una invitación para hablar.
+              </p>
+              
+              <p>
+                Soy Rafael Izquierdo, CEO de V-Vision, y me apasiona ayudar a emprendedores y empresas a transformar ideas en resultados. Lo que busco aquí es conectar, escuchar tus inquietudes y ver si puedo aportar valor a tu proyecto con mi experiencia en el mundo empresarial y tecnológico.
+              </p>
+              
+              <p>
+                Si estás buscando un camino directo al éxito sin pasar por el esfuerzo, esta web no es para ti. Si lo que quieres es compartir lo que estás haciendo, aprender y ver cómo podemos avanzar juntos, estás en el lugar correcto.
+              </p>
+              
+              <div className="pt-4">
+                <motion.a 
+                  href="#contact"
+                  className="inline-flex items-center font-medium text-accent hover:text-accent/80 transition-link"
+                  whileHover={{ x: 5 }}
+                >
+                  Escríbeme un email y empecemos a hablar
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </motion.a>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      <div className="border-t border-gray-200 w-full max-w-4xl mx-auto"></div>
+      
+      {/* About Section */}
+      <About />
+      
+      {/* Contact Section */}
+      <Contact />
+    </>
+  );
+}
