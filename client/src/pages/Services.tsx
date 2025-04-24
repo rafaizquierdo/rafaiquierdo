@@ -96,6 +96,9 @@ export default function Services() {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="mt-10 text-center">
+            <p className="text-lg text-gray-700 text-justify mb-4">
+              Encontrar el equilibrio entre el trabajo del día y visión a largo plazo es muy complicado.
+            </p>
             <p className="text-lg text-gray-700 text-justify">
               Si ves que lo que necesitas está alineado con lo que ofrezco, hablemos.
             </p>
