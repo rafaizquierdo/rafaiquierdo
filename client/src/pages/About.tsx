@@ -15,7 +15,10 @@ export default function About() {
     "Estrategia empresarial",
     "Innovación",
     "Sector salud",
-    "Tecnología"
+    "Tecnología",
+    "Automatización",
+    "Ventas",
+    "IA generativa"
   ];
 
   return (
