@@ -19,8 +19,7 @@ function Router() {
       <Header />
       <main>
         <Route path="/" component={Home} />
-        {/* Redirigimos todas las rutas a Home ya que es una landing page */}
-        <Route path="*" component={Home} />
+        <Route path="*" component={NotFound} />
       </main>
       <Footer />
     </>
@@ -30,7 +29,7 @@ function Router() {
 function App() {
   // Set title
   useEffect(() => {
-    document.title = "Rafael Izquierdo | Co-Fundador de V-Vision";
+    document.title = "Rafael Izquierdo | CEO de V-Vision";
   }, []);
 
   return (
