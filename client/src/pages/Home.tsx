@@ -52,21 +52,25 @@ export default function Home() {
               className="space-y-6 text-lg"
               variants={fadeInUp}
             >
-              <p>
+              <p className="text-justify">
                 En esta web no vas a encontrar un curso, una newsletter, ni una membresía. Solo una invitación para hablar.
               </p>
               
-              <p>
-                Soy Rafael Izquierdo, CEO de V-Vision, y me apasiona ayudar a emprendedores y empresas a transformar ideas en resultados. Lo que busco aquí es conectar, escuchar tus inquietudes y ver si puedo aportar valor a tu proyecto con mi experiencia en el mundo empresarial y tecnológico.
+              <p className="text-justify">
+                Soy Rafael Izquierdo, Co-Fundador de V-Vision, y me apasiona ayudar a emprendedores y empresas a transformar ideas en realidades que impacten positivamente en las personas. Lo que busco aquí es conectar, escuchar tus inquietudes y ver si puedo aportar valor a tu proyecto con mi experiencia en el mundo empresarial y tecnológico.
               </p>
               
-              <p>
-                Si estás buscando un camino directo al éxito sin pasar por el esfuerzo, esta web no es para ti. Si lo que quieres es compartir lo que estás haciendo, aprender y ver cómo podemos avanzar juntos, estás en el lugar correcto.
+              <p className="text-justify">
+                Mi trayectoria me ha enseñado que las mejores innovaciones suelen enfrentar la mayor resistencia al cambio. Como le sucedió a Graham Bell con el teléfono, introducir nuevas tecnologías que mejoren la vida de las personas implica superar inercias profundamente arraigadas. Y cuanto más revolucionaria sea la idea, más obstáculos encontrarás en el camino.
+              </p>
+              
+              <p className="text-justify">
+                Si estás buscando un camino directo al éxito sin pasar por el esfuerzo, esta web no es para ti. Si lo que quieres es compartir lo que estás haciendo, aprender y ver cómo podemos avanzar juntos para convertir tu visión en realidad, estás en el lugar correcto.
               </p>
               
               <div className="pt-4">
                 <motion.a 
-                  href="#contact"
+                  href="mailto:info@rafaizquierdo.es?body=(cuéntame algo de ti y de tu proyecto/idea/problema)"
                   className="inline-flex items-center font-medium text-accent hover:text-accent/80 transition-link"
                   whileHover={{ x: 5 }}
                 >
