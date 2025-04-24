@@ -75,7 +75,7 @@ export default function About() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
                   </svg>
-                  CEO de V-Vision
+                  Co-Fundador de V-Vision
                 </div>
               </div>
             </motion.div>
@@ -84,19 +84,19 @@ export default function About() {
               className="lg:w-3/5 space-y-6 text-lg"
               variants={fadeInUp}
             >
-              <p>
-                Soy ingeniero, emprendedor y CEO de V-Vision, una empresa que hace realidad soluciones innovadoras en el ámbito de la salud visual.
+              <p className="text-justify">
+                Soy ingeniero, emprendedor y Co-Fundador de V-Vision, una empresa que hace realidad soluciones innovadoras en el ámbito de la salud visual.
               </p>
               
-              <p>
+              <p className="text-justify">
                 A lo largo de mi carrera, he recorrido el exigente proceso de transformar una idea en un negocio que genera ingresos. He levantado rondas de inversión, conseguido financiación de fondos y business angels, y he recibido subvenciones como Neotec.
               </p>
               
-              <p>
+              <p className="text-justify">
                 No me vas a encontrar aquí vendiendo recetas mágicas, ni dándote consejos no solicitados. Lo que sé hacer lo hago con pasión, y lo que no, lo reconozco sin rodeos.
               </p>
               
-              <p>
+              <p className="text-justify">
                 Mi objetivo es ayudar a aquellos que se atreven a desafiar la inercia y el miedo al cambio.
               </p>
               

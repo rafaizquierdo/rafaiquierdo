@@ -37,12 +37,12 @@ export default function Contact() {
                 ¿Tienes un proyecto en mente?
               </h2>
               
-              <p className="text-lg mb-8">
+              <p className="text-lg mb-8 text-justify">
                 Puedes escribirme directamente a mi correo electrónico. Si crees que puedo aportar valor a lo que estás construyendo, estaré encantado de hablar contigo.
               </p>
               
               <motion.a 
-                href="mailto:contacto@rafaelizquierdo.com" 
+                href="mailto:info@rafaizquierdo.es?body=(cuéntame algo de ti y de tu proyecto/idea/problema)" 
                 className="inline-flex items-center justify-center bg-accent text-white font-medium px-6 py-3 rounded-md hover:bg-accent/90 transition-link"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-lg font-medium text-primary">Rafael Izquierdo</p>
-            <p className="text-gray-500">CEO de V-Vision</p>
+            <p className="text-gray-500">Co-Fundador de V-Vision</p>
           </div>
 
           <div className="flex space-x-6">
