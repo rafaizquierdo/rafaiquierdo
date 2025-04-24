@@ -85,6 +85,18 @@ export default function Header() {
               Sobre Mí
             </a>
             <a
+              href="#services"
+              className="text-primary hover:text-accent font-medium transition-link"
+            >
+              Servicios
+            </a>
+            <a
+              href="#testimonials"
+              className="text-primary hover:text-accent font-medium transition-link"
+            >
+              Testimonios
+            </a>
+            <a
               href="#contact"
               className="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-link"
             >
@@ -118,6 +130,20 @@ export default function Header() {
                 className="block py-2 text-primary hover:text-accent font-medium transition-link"
               >
                 Sobre Mí
+              </a>
+              <a
+                href="#services"
+                onClick={closeMenu}
+                className="block py-2 text-primary hover:text-accent font-medium transition-link"
+              >
+                Servicios
+              </a>
+              <a
+                href="#testimonials"
+                onClick={closeMenu}
+                className="block py-2 text-primary hover:text-accent font-medium transition-link"
+              >
+                Testimonios
               </a>
               <a
                 href="#contact"

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import About from "./About";
 import Contact from "./Contact";
+import Services from "./Services";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   const fadeInUp = {
@@ -89,6 +91,18 @@ export default function Home() {
       
       {/* About Section */}
       <About />
+      
+      <div className="border-t border-gray-200 w-full max-w-4xl mx-auto"></div>
+      
+      {/* Services Section */}
+      <Services />
+      
+      <div className="border-t border-gray-200 w-full max-w-4xl mx-auto"></div>
+      
+      {/* Testimonials Section */}
+      <Testimonials />
+      
+      <div className="border-t border-gray-200 w-full max-w-4xl mx-auto"></div>
       
       {/* Contact Section */}
       <Contact />
