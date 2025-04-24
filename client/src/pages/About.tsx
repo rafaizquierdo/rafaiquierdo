@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import rafaelImage from "../assets/rafael_izquierdo.png";
 
 export default function About() {
   const fadeInUp = {
@@ -45,14 +46,14 @@ export default function About() {
           
           <div className="lg:flex items-start gap-12">
             <motion.div 
-              className="lg:w-1/3 mb-8 lg:mb-0"
+              className="lg:w-2/5 mb-8 lg:mb-0"
               variants={fadeInUp}
             >
-              <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative">
+              <div className="bg-white rounded-xl overflow-hidden relative max-h-[520px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src={rafaelImage} 
                   alt="Rafael Izquierdo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain mx-auto"
                 />
               </div>
               
@@ -80,7 +81,7 @@ export default function About() {
             </motion.div>
             
             <motion.div 
-              className="lg:w-2/3 space-y-6 text-lg"
+              className="lg:w-3/5 space-y-6 text-lg"
               variants={fadeInUp}
             >
               <p>
