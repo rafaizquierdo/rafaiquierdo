@@ -30,7 +30,7 @@ export default function NotFound() {
           whileTap={{ scale: 0.95 }}
         >
           <Link href="/">
-            <a className="inline-flex items-center justify-center bg-accent text-white font-medium px-6 py-3 rounded-md hover:bg-accent/90 transition-colors">
+            <button className="inline-flex items-center justify-center bg-accent text-white font-medium px-6 py-3 rounded-md hover:bg-accent/90 transition-colors">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 className="h-5 w-5 mr-2" 
@@ -40,7 +40,7 @@ export default function NotFound() {
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
               Volver a la página principal
-            </a>
+            </button>
           </Link>
         </motion.div>
       </motion.div>
