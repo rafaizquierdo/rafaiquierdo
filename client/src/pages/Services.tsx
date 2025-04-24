@@ -26,7 +26,7 @@ const fadeInUp = {
 const serviceItems = [
   {
     title: "Emprendimiento y Estrategia",
-    description: "Ayudo a transformar ideas en negocios sólidos, con un enfoque claro hacia la financiación, la gestión y el crecimiento.",
+    description: "Encontrar el equilibrio para atender el día a día y tener visión a largo plazo es muy complicado. Ayudo a transformar ideas en negocios sólidos, con foco en la financiación, la gestión y el crecimiento.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -35,7 +35,7 @@ const serviceItems = [
   },
   {
     title: "Tecnología y Transformación Digital",
-    description: "Acompaño a empresas tradicionales a incorporar nuevas soluciones tecnológicas que optimicen procesos y mejoren la eficiencia.",
+    description: "Sí, la IA es el futuro, pero ¿sabes cómo sacarle partido hoy mismo? Acompaño a empresas y startups a incorporar nuevas soluciones tecnológicas que optimicen procesos y mejoren la eficiencia.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -44,7 +44,7 @@ const serviceItems = [
   },
   {
     title: "Ventas y Marketing",
-    description: "Te ayudo a crear estrategias de ventas realistas y escalables, basadas en datos y con resultados medibles.",
+    description: "Levanta el teléfono y llama ya. Te ayudo a crear estrategias de ventas realistas y escalables, basadas en datos y con resultados medibles.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -96,9 +96,6 @@ export default function Services() {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="mt-10 text-center">
-            <p className="text-lg text-gray-700 text-justify mb-4">
-              Encontrar el equilibrio entre el trabajo del día y visión a largo plazo es muy complicado.
-            </p>
             <p className="text-lg text-gray-700 text-justify">
               Si ves que lo que necesitas está alineado con lo que ofrezco, hablemos.
             </p>

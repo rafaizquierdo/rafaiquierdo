@@ -3,7 +3,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
-import profileImage from "@assets/foto cuerpo light.png";
+import profileImage from "@assets/foto cuerpo light.webp";
 
 export default function Home() {
   const fadeInUp = {
