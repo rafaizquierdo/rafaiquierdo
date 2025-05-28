@@ -1,0 +1,66 @@
+A continuación tienes una guía “de arriba abajo”, escrita sólo en lenguaje natural, para que tu agente de Replit pueda implementar la funcionalidad de blog dinámico sin necesidad de recompilar tu web cada vez que publiques un artículo.
+
+⸻
+
+1. Visión general
+
+Tu web seguirá siendo una aplicación Node con Express y Tailwind. El objetivo es convertirla en un mini-CMS basado en archivos: cada vez que coloques un documento Markdown en una carpeta concreta, el servidor lo detectará, extraerá su cabecera (front matter), lo convertirá a HTML y lo servirá automáticamente. Tendrás dos rutas: una que muestra el índice de artículos y otra que enseña el artículo individual.
+
+⸻
+
+2. Flujo de funcionamiento
+	1.	Al iniciarse el servidor se revisa la carpeta que contendrá los posts. Se buscan todos los ficheros con extensión “.md”.
+	2.	De cada fichero se lee el bloque de front matter que incluye datos como título, fecha, autor, etiquetas y un identificador (“slug”) que se usará en la URL.
+	3.	El cuerpo Markdown se transforma en HTML con una librería de “markdown-to-html”.
+	4.	El HTML resultante se pasa por un sanitizador para evitar código malicioso.
+	5.	Toda la información procesada se guarda en memoria para que las peticiones siguientes sean inmediatas.
+	6.	Cuando un visitante entra en “/blog”, el servidor responde con una vista que recorre la lista de posts en memoria, ya ordenada por fecha y paginada si fuese necesario.
+	7.	Al entrar en “/blog/slug-del-articulo”, el servidor busca ese slug en la cache, inyecta el HTML en la plantilla y lo envía al navegador con los estilos de la clase “prose” de Tailwind Typography.
+	8.	En modo desarrollo se arranca un observador de archivos que vigila la carpeta de posts. Si detecta que un Markdown se crea, edita o borra, borra la cache y la reconstruye al vuelo, de modo que basta guardar el fichero para verlo en la web.
+
+⸻
+
+3. Librerías que necesitará instalar el agente
+	•	Express para las rutas y el middleware estático.
+	•	EJS (u otra motor de plantillas) para componer las vistas.
+	•	Gray-matter para leer front matter.
+	•	Markdown-it para pasar Markdown a HTML.
+	•	Sanitize-html para limpiar el HTML generado.
+	•	Tailwind, junto con el plugin Typography, para que los artículos se vean elegantes con una sola clase.
+	•	Chokidar como dependencia de desarrollo, para escuchar cambios en la carpeta de posts durante el desarrollo.
+	•	Nodemon para reiniciar automáticamente el servidor cuando modifiques cualquier archivo de la aplicación.
+	•	ESLint y Prettier para mantener el código consistente y Jest con Supertest si quieres pruebas unitarias y de integración.
+
+⸻
+
+4. Estructura de carpetas recomendada
+
+Explícale al agente que coloque todo el contenido Markdown en una ruta clara dentro del proyecto. Puedes sugerir:
+
+content/posts
+
+Aquí irán los artículos. El primer fichero de ejemplo podría llamarse “2025-05-28-bienvenida.md”. El agente debe garantizar que la configuración de Tailwind incluya esta carpeta entre los caminos que escanea para generar sus clases, de modo que cualquier fragmento de Markdown incrustado pueda beneficiarse de los estilos “prose”.
+
+⸻
+
+5. Buenas prácticas que el agente debe aplicar
+	•	Seguridad: escapar cualquier variable que se imprima en las plantillas y permitir sólo los elementos HTML necesarios después de convertir el Markdown. Conviene definir una política CSP en los encabezados HTTP para recortar vectores de ataque.
+	•	Rendimiento: como la conversión Markdown-a-HTML se hace una vez y el resultado se cachea, las respuestas son rápidas. Aun así, si el número de posts crece, habrá que añadir paginación o carga diferida.
+	•	Mantenibilidad: separar el código que se encarga de “cargar posts” en un módulo propio dentro de una carpeta “lib” o “utils”. Así la lógica queda aislada y se puede probar de forma independiente.
+	•	Observabilidad: registrar en consola cuándo se invalidan los posts y exponer mensajes claros cuando un slug no existe, devolviendo en ese caso una página 404 amigable.
+	•	Accesibilidad y SEO: generar un resumen en la cabecera del documento para usarlo como meta-description y asegurarte de que las imágenes del Markdown llevan texto alternativo.
+	•	Pipeline de desarrollo: el agente debería configurar un comando único que compile Tailwind en modo watch, arranque el servidor con Nodemon y mantenga todo actualizado cada vez que pulses “Guardar” en Replit.
+
+⸻
+
+6. Pasos concretos que debe ejecutar el agente
+	1.	Instalar todas las librerías citadas, distinguiendo entre dependencias de producción y de desarrollo.
+	2.	Crear la carpeta “content/posts” y colocar dentro el artículo de ejemplo.
+	3.	Implementar un módulo que lea esa carpeta, convierta y cachee el resultado.
+	4.	Definir las rutas “/blog” y “/blog/:slug” en el servidor existente.
+	5.	Construir las vistas EJS aprovechando la clase “prose” para el cuerpo del artículo y presentando los metadatos esenciales.
+	6.	Configurar Chokidar para que cualquier cambio en la carpeta de posts reinvalide la cache en caliente durante el desarrollo.
+	7.	Revisar que Tailwind Typography esté activado y que el pipeline de build genere el CSS final en la carpeta pública.
+	8.	Probar localmente que el índice y la página de artículo responden correctamente, que el HTML está sanitizado y que la navegación vuelve al listado sin errores.
+
+Con estas instrucciones verbales el agente de Replit puede transformar tu página en un blog autogestionado por archivos Markdown sin exponer código aquí en el chat. Sólo tendrá que traducir cada punto a implementación y reutilizar la base que ya tienes desplegada.
