@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Rafael Izquierdo</title>
+    <meta name="description" content="Blog profesional de Rafael Izquierdo sobre transformación digital, liderazgo empresarial y emprendimiento.">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold text-gray-900">Rafael Izquierdo</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600">Inicio</a>
+                    <a href="/about" class="text-gray-700 hover:text-blue-600">Sobre mí</a>
+                    <a href="/services" class="text-gray-700 hover:text-blue-600">Servicios</a>
+                    <a href="/blog" class="text-blue-600 font-medium">Blog</a>
+                    <a href="/contact" class="text-gray-700 hover:text-blue-600">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Blog Profesional</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Insights sobre transformación digital, liderazgo empresarial y tendencias del sector tecnológico
+            </p>
+        </div>
+
+        <% if (posts.length === 0) { %>
+            <div class="text-center py-12">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Próximamente</h2>
+                <p class="text-gray-600">Estoy preparando contenido valioso para compartir contigo.</p>
+            </div>
+        <% } else { %>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <% posts.forEach(post => { %>
+                    <article class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <time datetime="<%= post.date %>">
+                                    <%= new Date(post.date).toLocaleDateString('es-ES', { 
+                                        year: 'numeric', 
+                                        month: 'long', 
+                                        day: 'numeric' 
+                                    }) %>
+                                </time>
+                                <span class="mx-2">•</span>
+                                <span><%= post.author %></span>
+                            </div>
+                            
+                            <h2 class="text-xl font-semibold text-gray-900 mb-3">
+                                <a href="/blog/<%= post.slug %>" class="hover:text-blue-600 transition-colors">
+                                    <%= post.title %>
+                                </a>
+                            </h2>
+                            
+                            <% if (post.excerpt) { %>
+                                <p class="text-gray-600 mb-4 line-clamp-3"><%= post.excerpt %></p>
+                            <% } %>
+                            
+                            <% if (post.tags.length > 0) { %>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <% post.tags.forEach(tag => { %>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                                            <%= tag %>
+                                        </span>
+                                    <% }) %>
+                                </div>
+                            <% } %>
+                            
+                            <a href="/blog/<%= post.slug %>" 
+                               class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                                Leer más
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                <% }) %>
+            </div>
+        <% } %>
+    </main>
+
+    <footer class="bg-gray-50 border-t mt-16">
+        <div class="max-w-7xl mx-auto py-8 px-4 text-center">
+            <p class="text-gray-600">© <%= new Date().getFullYear() %> Rafael Izquierdo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
