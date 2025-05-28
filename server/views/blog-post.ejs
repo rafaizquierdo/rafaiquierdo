@@ -8,80 +8,137 @@
     <meta name="author" content="<%= post.author %>">
     <link href="/styles.css" rel="stylesheet">
 </head>
-<body class="bg-white">
-    <nav class="bg-white shadow-sm border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="/" class="text-xl font-bold text-gray-900">Rafael Izquierdo</a>
-                </div>
-                <div class="flex items-center space-x-8">
-                    <a href="/" class="text-gray-700 hover:text-blue-600">Inicio</a>
-                    <a href="/about" class="text-gray-700 hover:text-blue-600">Sobre mí</a>
-                    <a href="/services" class="text-gray-700 hover:text-blue-600">Servicios</a>
-                    <a href="/blog" class="text-blue-600 font-medium">Blog</a>
-                    <a href="/contact" class="text-gray-700 hover:text-blue-600">Contacto</a>
-                </div>
+<body class="bg-background text-foreground">
+    <!-- Header elegante -->
+    <header class="fixed w-full bg-background/90 backdrop-blur-sm z-50 border-b border-border">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="text-xl font-semibold text-primary hover:text-accent transition-colors">
+                    Rafael Izquierdo
+                </a>
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="/#home" class="text-primary hover:text-accent font-medium transition-colors">Inicio</a>
+                    <a href="/#about" class="text-primary hover:text-accent font-medium transition-colors">Sobre Mí</a>
+                    <a href="/#services" class="text-primary hover:text-accent font-medium transition-colors">Servicios</a>
+                    <a href="/#testimonials" class="text-primary hover:text-accent font-medium transition-colors">Testimonios</a>
+                    <a href="/blog" class="text-accent font-medium">Blog</a>
+                    <a href="/#contact" class="bg-accent text-accent-foreground px-4 py-2 rounded-md hover:bg-accent/90 transition-colors">
+                        Contacto
+                    </a>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-12">
-        <nav class="mb-8">
-            <a href="/blog" class="inline-flex items-center text-blue-600 hover:text-blue-700">
-                <svg class="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                </svg>
-                Volver al blog
-            </a>
-        </nav>
+    <main class="pt-24">
+        <!-- Breadcrumb elegante -->
+        <div class="container mx-auto px-4 py-6">
+            <nav class="mb-8">
+                <a href="/blog" class="inline-flex items-center text-accent hover:text-accent/80 font-medium group">
+                    <svg class="mr-2 w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Volver al blog
+                </a>
+            </nav>
+        </div>
 
-        <article>
-            <header class="mb-8">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4"><%= post.title %></h1>
+        <!-- Header del artículo -->
+        <header class="container mx-auto px-4 pb-12">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+                    <%= post.title %>
+                </h1>
                 
-                <div class="flex items-center text-gray-600 mb-6">
-                    <time datetime="<%= post.date %>">
-                        <%= new Date(post.date).toLocaleDateString('es-ES', { 
-                            year: 'numeric', 
-                            month: 'long', 
-                            day: 'numeric' 
-                        }) %>
-                    </time>
-                    <span class="mx-2">•</span>
-                    <span><%= post.author %></span>
+                <div class="flex items-center justify-center text-muted-foreground mb-8 space-x-4">
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        <time datetime="<%= post.date %>" class="font-medium">
+                            <%= new Date(post.date).toLocaleDateString('es-ES', { 
+                                year: 'numeric', 
+                                month: 'long', 
+                                day: 'numeric' 
+                            }) %>
+                        </time>
+                    </div>
+                    <span>•</span>
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                        <span class="font-medium"><%= post.author %></span>
+                    </div>
                 </div>
 
                 <% if (post.tags.length > 0) { %>
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
                         <% post.tags.forEach(tag => { %>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                            <span class="px-4 py-2 bg-accent/10 text-accent text-sm font-medium rounded-full border border-accent/20">
                                 <%= tag %>
                             </span>
                         <% }) %>
                     </div>
                 <% } %>
-            </header>
+            </div>
+        </header>
 
-            <div class="prose prose-lg prose-blue max-w-none">
-                <%- post.htmlContent %>
+        <!-- Contenido del artículo -->
+        <article class="container mx-auto px-4 pb-16">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg prose-primary max-w-none
+                           prose-headings:text-primary prose-headings:font-bold
+                           prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
+                           prose-p:text-foreground prose-p:leading-relaxed
+                           prose-a:text-accent prose-a:no-underline hover:prose-a:text-accent/80
+                           prose-strong:text-primary prose-strong:font-semibold
+                           prose-code:text-accent prose-code:bg-accent/10 prose-code:px-2 prose-code:py-1 prose-code:rounded
+                           prose-pre:bg-secondary prose-pre:border prose-pre:border-border
+                           prose-blockquote:border-l-accent prose-blockquote:bg-accent/5 prose-blockquote:px-6 prose-blockquote:py-4
+                           prose-ul:text-foreground prose-ol:text-foreground
+                           prose-li:text-foreground">
+                    <%- post.htmlContent %>
+                </div>
             </div>
         </article>
 
-        <footer class="mt-12 pt-8 border-t">
-            <div class="text-center">
-                <p class="text-gray-600 mb-4">¿Te ha resultado útil este artículo?</p>
-                <a href="/contact" 
-                   class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+        <!-- Call to action -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="max-w-2xl mx-auto text-center bg-gradient-to-br from-accent/10 via-accent/5 to-background rounded-2xl p-8 border border-accent/20">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                    ¿Te ha resultado útil este artículo?
+                </h3>
+                <p class="text-muted-foreground mb-6">
+                    Si tienes alguna pregunta o te gustaría profundizar en estos temas, no dudes en contactarme.
+                </p>
+                <a href="/#contact" 
+                   class="inline-flex items-center px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors shadow-lg">
+                    <svg class="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
                     Contactar con Rafael
                 </a>
             </div>
-        </footer>
+        </section>
     </main>
 
-    <footer class="bg-gray-50 border-t mt-16">
-        <div class="max-w-7xl mx-auto py-8 px-4 text-center">
-            <p class="text-gray-600">© <%= new Date().getFullYear() %> Rafael Izquierdo. Todos los derechos reservados.</p>
+    <!-- Footer elegante -->
+    <footer class="bg-secondary border-t border-border">
+        <div class="container mx-auto py-12 px-4">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold text-primary mb-4">Rafael Izquierdo</h3>
+                <p class="text-muted-foreground mb-6">CEO de V-Vision | Experto en Transformación Digital</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="/blog" class="text-muted-foreground hover:text-accent transition-colors">Blog</a>
+                    <a href="/#about" class="text-muted-foreground hover:text-accent transition-colors">Sobre Mí</a>
+                    <a href="/#services" class="text-muted-foreground hover:text-accent transition-colors">Servicios</a>
+                    <a href="/#contact" class="text-muted-foreground hover:text-accent transition-colors">Contacto</a>
+                </div>
+                <p class="text-sm text-muted-foreground">
+                    © <%= new Date().getFullYear() %> Rafael Izquierdo. Todos los derechos reservados.
+                </p>
+            </div>
         </div>
     </footer>
 </body>
