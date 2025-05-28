@@ -97,6 +97,12 @@ export default function Header() {
               Testimonios
             </a>
             <a
+              href="/blog"
+              className="text-primary hover:text-accent font-medium transition-link"
+            >
+              Blog
+            </a>
+            <a
               href="#contact"
               className="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-link"
             >
@@ -144,6 +150,13 @@ export default function Header() {
                 className="block py-2 text-primary hover:text-accent font-medium transition-link"
               >
                 Testimonios
+              </a>
+              <a
+                href="/blog"
+                onClick={closeMenu}
+                className="block py-2 text-primary hover:text-accent font-medium transition-link"
+              >
+                Blog
               </a>
               <a
                 href="#contact"

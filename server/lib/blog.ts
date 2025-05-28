@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 import sanitizeHtml from 'sanitize-html';
-import chokidar from 'chokidar';
+import * as chokidar from 'chokidar';
 
 const md = new MarkdownIt({
   html: true,
@@ -25,7 +25,7 @@ export interface BlogPost {
 class BlogManager {
   private posts: Map<string, BlogPost> = new Map();
   private postsDir = path.join(process.cwd(), 'content/posts');
-  private watcher: chokidar.FSWatcher | null = null;
+  private watcher: any | null = null;
 
   constructor() {
     this.loadPosts();
