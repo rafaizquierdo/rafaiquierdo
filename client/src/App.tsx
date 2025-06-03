@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useScrollToHash } from "./lib/useScrollToHash";
@@ -73,6 +74,7 @@ function Router() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/blog" component={Blog} />
+          <Route path="/blog/:postName" component={BlogPost} />
           <Route component={NotFound} />
         </Switch>
       </main>
