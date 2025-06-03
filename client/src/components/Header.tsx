@@ -99,18 +99,18 @@ export default function Header() {
             >
               Servicios
             </a>
-            <Link 
-              href="/blog"
-              className="text-primary hover:text-accent font-medium transition-link"
-            >
-              Blog
-            </Link>
             <a
               href={getNavUrl("testimonials")}
               className="text-primary hover:text-accent font-medium transition-link"
             >
               Testimonios
             </a>
+            <Link 
+              href="/blog"
+              className="text-primary hover:text-accent font-medium transition-link"
+            >
+              Blog
+            </Link>
             <a
               href={getNavUrl("contact")}
               className="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-link"
@@ -153,13 +153,6 @@ export default function Header() {
               >
                 Servicios
               </a>
-              <Link 
-                href="/blog"
-                onClick={closeMenu}
-                className="block py-2 text-primary hover:text-accent font-medium transition-link"
-              >
-                Blog
-              </Link>
               <a
                 href={getNavUrl("testimonials")}
                 onClick={closeMenu}
@@ -167,6 +160,13 @@ export default function Header() {
               >
                 Testimonios
               </a>
+              <Link 
+                href="/blog"
+                onClick={closeMenu}
+                className="block py-2 text-primary hover:text-accent font-medium transition-link"
+              >
+                Blog
+              </Link>
               <a
                 href={getNavUrl("contact")}
                 onClick={closeMenu}
