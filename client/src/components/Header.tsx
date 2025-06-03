@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [location] = useLocation();
 
   // Handle scroll event to add shadow to header
   useEffect(() => {
@@ -29,6 +30,14 @@ export default function Header() {
     setIsMenuOpen(false);
   };
 
+  // Helper function to get correct navigation URL
+  const getNavUrl = (section: string) => {
+    if (location === "/") {
+      return `#${section}`;
+    }
+    return `/#${section}`;
+  };
+
   return (
     <header
       className={cn(
@@ -39,7 +48,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <a
-            href="#home"
+            href={getNavUrl("home")}
             className="text-xl font-semibold text-primary hover:text-accent transition-link"
           >
             Rafael Izquierdo
@@ -73,19 +82,19 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="hidden lg:flex space-x-8">
             <a
-              href="#home"
+              href={getNavUrl("home")}
               className="text-primary hover:text-accent font-medium transition-link"
             >
               Inicio
             </a>
             <a
-              href="#about"
+              href={getNavUrl("about")}
               className="text-primary hover:text-accent font-medium transition-link"
             >
               Sobre Mí
             </a>
             <a
-              href="#services"
+              href={getNavUrl("services")}
               className="text-primary hover:text-accent font-medium transition-link"
             >
               Servicios
@@ -97,13 +106,13 @@ export default function Header() {
               Blog
             </Link>
             <a
-              href="#testimonials"
+              href={getNavUrl("testimonials")}
               className="text-primary hover:text-accent font-medium transition-link"
             >
               Testimonios
             </a>
             <a
-              href="#contact"
+              href={getNavUrl("contact")}
               className="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-link"
             >
               Contacto
@@ -124,21 +133,21 @@ export default function Header() {
           >
             <div className="px-4 py-3 space-y-2 bg-white border-t">
               <a
-                href="#home"
+                href={getNavUrl("home")}
                 onClick={closeMenu}
                 className="block py-2 text-primary hover:text-accent font-medium transition-link"
               >
                 Inicio
               </a>
               <a
-                href="#about"
+                href={getNavUrl("about")}
                 onClick={closeMenu}
                 className="block py-2 text-primary hover:text-accent font-medium transition-link"
               >
                 Sobre Mí
               </a>
               <a
-                href="#services"
+                href={getNavUrl("services")}
                 onClick={closeMenu}
                 className="block py-2 text-primary hover:text-accent font-medium transition-link"
               >
@@ -152,14 +161,14 @@ export default function Header() {
                 Blog
               </Link>
               <a
-                href="#testimonials"
+                href={getNavUrl("testimonials")}
                 onClick={closeMenu}
                 className="block py-2 text-primary hover:text-accent font-medium transition-link"
               >
                 Testimonios
               </a>
               <a
-                href="#contact"
+                href={getNavUrl("contact")}
                 onClick={closeMenu}
                 className="block py-2 text-accent font-medium transition-link"
               >
