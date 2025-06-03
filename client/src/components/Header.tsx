@@ -90,6 +90,12 @@ export default function Header() {
             >
               Servicios
             </a>
+            <Link 
+              href="/blog"
+              className="text-primary hover:text-accent font-medium transition-link"
+            >
+              Blog
+            </Link>
             <a
               href="#testimonials"
               className="text-primary hover:text-accent font-medium transition-link"
@@ -138,6 +144,13 @@ export default function Header() {
               >
                 Servicios
               </a>
+              <Link 
+                href="/blog"
+                onClick={closeMenu}
+                className="block py-2 text-primary hover:text-accent font-medium transition-link"
+              >
+                Blog
+              </Link>
               <a
                 href="#testimonials"
                 onClick={closeMenu}
