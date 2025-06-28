@@ -4,9 +4,9 @@
 
 Pero quizá la verdadera desigualdad que se está gestando es la que separa a quienes siguen aferrados a viejas estructuras y aquellos que ya han decidido vivir al margen de ellas.
 
-Vivimos en un tiempo donde los gobiernos son cada vez más grandes, consumen más recursos y limitan más nuestras libertades individuales. Mientras tanto, la tecnología avanza imparable, ofreciendo una alternativa disruptiva: la independencia digital a través del poder de los servicios Peer-to-Peer (P2P).
+Vivimos en un tiempo donde los gobiernos son cada vez más grandes, consumen más recursos y limitan más nuestras libertades individuales. Mientras tanto, la tecnología avanza imparable, ofreciendo una alternativa disruptiva: la independencia digital a través del poder de los servicios **persona a persona** (conocidos también como Peer-to-Peer o P2P).
 
-La desigualdad no viene solo por la parte de ricos-pobres entendidos ambos como abundancia o carencia de dinero. La desigualdad viene de entes cada vez más poderosos frente al ciudadano común. Corporaciones gigantes que absorben empresas anteriormente competidoras, haciendo cautivos a sus clientes, sin alternativas reales. Un ejemplo claro lo vemos en las 7 grandes tecnológicas americanas cuyo valor sumado representa un porcentaje significativo del valor total de las restantes empresas del índice S&P 500.
+La desigualdad no viene solo por la parte de ricos-pobres entendidos ambos como abundancia o carencia de dinero. La desigualdad viene de entes cada vez más poderosos frente al ciudadano común. Corporaciones gigantes que absorben empresas anteriormente competidoras, haciendo cautivos a sus clientes, sin alternativas reales. Un ejemplo claro lo vemos en las 7 grandes tecnológicas americanas cuyo valor sumado representa un porcentaje significativo del valor total de las restantes 493 empresas del SP500 (las 500 empresas estadounidenses más valiosas).
 
 Además, los gobiernos dificultan las innovaciones que desafían lo establecido—establecido precisamente con su apoyo y complicidad hacia estas grandes corporaciones. Las ayudas, contratos públicos y licencias suelen acabar siempre en las mismas manos, las de las empresas más grandes y cercanas al poder.
 
