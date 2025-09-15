@@ -31,3 +31,5 @@ Lo gracioso —si tiene gracia— es que la transferencia cuesta lo mismo aunque
 No se trata de cambiarlo todo mañana ni de militar en la religión de los satoshis. Se trata de reconocer que hay un fallo de diseño cuando el peaje es más caro que el servicio. La historia económica demuestra que, tarde o temprano, los usuarios se rebelan contra los tributos que no entienden. A veces migran a nuevos sistemas; otras, obligan a los antiguos a reinventarse. Pero la constante es clara: lo que no aporta valor acaba encontrando su fecha de caducidad.
 
 La próxima vez que pulses "enviar" y veas aparecer esos 3 €, recuerda el café con tasa de sorbo, el ascensor con impuesto al peso y el email con estampilla. Puede que rías un segundo, o puede que descubras que ya no hace tanta gracia. Ese será el primer paso para exigir algo mejor, sea bajo la insignia de Bitcoin o la de cualquier otra innovación que, al menos, nos cobre por lo que realmente cuesta y no por lo acostumbrados que estamos a pagar.
+
+#bitcoin

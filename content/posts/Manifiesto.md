@@ -23,3 +23,5 @@ Mi invitación es provocarte, hacerte cuestionar: ¿Estás dispuesto a seguir so
 La puerta a esta nueva realidad está abierta. La pregunta es sencilla: ¿Te atreves a cruzarla?
 
 **La libertad nunca estuvo tan cerca. ¿Vas a quedarte fuera?**
+
+#p2p
