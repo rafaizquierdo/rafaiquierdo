@@ -31,3 +31,5 @@ Pero, igual que ocurrió con el teléfono de Graham Bell, la clave está en no d
 
 Al final, como el teléfono prevaleció sobre el telégrafo, Bitcoin también prevalecerá sobre el viejo sistema monetario, no porque sea perfecto, sino porque es significativamente mejor para las personas. Y eso, al final, es lo que importa.
 
+#emprendimiento
+

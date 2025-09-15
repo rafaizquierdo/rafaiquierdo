@@ -60,3 +60,5 @@ La próxima vez que un vídeo te suelte una cifra apocalíptica, haz un pequeño
 Los billetes adelgazan, los gráficos bailan y los gurús gritan. Tú, mientras, tienes que pagar facturas hoy y jubilarte mañana. La respuesta no es esconderte bajo la cama con latas, ni lanzarte sin paracaídas a cada hype. Se llama **diversificación inteligente** y se construye con información, criterio y… un puntito de rebeldía.
 
 Si quieres charlar, ya sabes 👇🏼
+
+#bitcoin
