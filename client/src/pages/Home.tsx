@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import About from "./About";
 import Contact from "./Contact";
 import Services from "./Services";
+import TargetAudience from "./TargetAudience";
 import Testimonials from "./Testimonials";
 import profileImage from "@assets/foto cuerpo light.webp";
 
@@ -60,7 +61,7 @@ export default function Home() {
                   className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8 text-primary"
                   variants={fadeInUp}
                 >
-                  No hay nada más difícil que abrir camino donde no lo hay. Pero tampoco hay nada más gratificante que conseguirlo.
+                  Soy Rafael Izquierdo, constructor de negocio tecnológico y Co‑Fundador de V‑Vision.
                 </motion.h1>
                 
                 {/* Imagen en pantallas pequeñas */}
@@ -79,8 +80,20 @@ export default function Home() {
                   className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 mb-12"
                   variants={fadeInUp}
                 >
-                  <p className="text-lg md:text-xl font-medium text-amber-600 mb-4">
-                    Advertencia: Si esperas alguna solución mágica, no la vas a encontrar. Aquí hablamos de lo que de verdad importa: compartir experiencias, aprender y, si encajamos, ver cómo puedo ayudarte.
+                  <p className="text-lg md:text-xl text-gray-700 mb-4">
+                    Conecto tecnología, ventas y operaciones para transformar innovación en negocio real.
+                  </p>
+                  <p className="text-gray-600">
+                    No ofrezco soluciones mágicas ni recetas genéricas. Aporto criterio, visión y ejecución allí donde hay que unir tecnología, personas y resultados.
+                  </p>
+                </motion.div>
+                
+                <motion.div 
+                  className="mb-8"
+                  variants={fadeInUp}
+                >
+                  <p className="text-lg text-accent font-medium">
+                    CEO | Dirección de producto y ventas | Fractional COO / CRO para empresas tecnológicas y scale‑ups.
                   </p>
                 </motion.div>
                 
@@ -89,19 +102,11 @@ export default function Home() {
                   variants={fadeInUp}
                 >
                   <p className="text-justify">
-                    En esta web no vas a encontrar un curso, una newsletter, ni una membresía. Solo una invitación para hablar.
+                    Si buscas a alguien que "mantenga lo que ya funciona", no soy la persona adecuada.
                   </p>
                   
                   <p className="text-justify">
-                    Soy Rafael Izquierdo, Co-Fundador de V-Vision, y me apasiona ayudar a emprendedores y empresas a transformar ideas en realidades que impacten positivamente en las personas. Lo que busco aquí es conectar, escuchar tus inquietudes y ver si puedo aportar valor a tu proyecto con mi experiencia en el mundo empresarial y tecnológico.
-                  </p>
-                  
-                  <p className="text-justify">
-                    Mi trayectoria me ha enseñado que las mejores innovaciones suelen enfrentar la mayor resistencia al cambio. Como le sucedió a Graham Bell con el teléfono, introducir nuevas tecnologías que mejoren la vida de las personas implica superar inercias profundamente arraigadas. Y cuanto más revolucionaria sea la idea, más obstáculos encontrarás en el camino.
-                  </p>
-                  
-                  <p className="text-justify">
-                    Si estás buscando un camino directo al éxito sin pasar por el esfuerzo, esta web no es para ti. Si lo que quieres es compartir lo que estás haciendo, aprender y ver cómo podemos avanzar juntos para convertir tu visión en realidad, estás en el lugar correcto.
+                    Si necesitas construir, escalar o reorganizar un negocio tecnológico, entonces sí tiene sentido que hablemos.
                   </p>
                   
                   <div className="pt-4">
@@ -110,7 +115,7 @@ export default function Home() {
                       className="inline-flex items-center font-medium text-accent hover:text-accent/80 transition-link"
                       whileHover={{ x: 5 }}
                     >
-                      Escríbeme un email y empecemos a hablar
+                      Hablemos de tu negocio
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -132,6 +137,11 @@ export default function Home() {
       
       {/* Services Section */}
       <Services />
+      
+      <div className="border-t border-gray-200 w-full max-w-4xl mx-auto"></div>
+      
+      {/* Target Audience Section */}
+      <TargetAudience />
       
       <div className="border-t border-gray-200 w-full max-w-4xl mx-auto"></div>
       

@@ -38,7 +38,7 @@ export default function Contact() {
               </h2>
               
               <p className="text-lg mb-8 text-justify">
-                Puedes escribirme directamente a mi correo electrónico. Si crees que puedo aportar valor a lo que estás construyendo, estaré encantado de hablar contigo.
+                Puedes escribirme directamente a mi correo electrónico. Si estás construyendo o escalando un negocio tecnológico y necesitas alinear visión, producto, ventas y operaciones, escríbeme y vemos si tiene sentido que trabajemos juntos.
               </p>
               
               <motion.a 
@@ -51,7 +51,7 @@ export default function Contact() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                Escríbeme un email
+                Hablemos de tu negocio
               </motion.a>
               
               <p className="text-sm text-gray-500 mt-6">
