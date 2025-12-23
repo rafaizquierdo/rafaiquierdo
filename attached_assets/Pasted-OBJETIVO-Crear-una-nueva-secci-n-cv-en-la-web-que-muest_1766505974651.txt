@@ -1,0 +1,213 @@
+OBJETIVO
+Crear una nueva sección "/cv" en la web que muestre mi currículum vitae completo con diseño profesional y funcionalidad de impresión.
+
+REQUISITOS TÉCNICOS
+Nueva ruta: Crear ruta /cv como página independiente
+
+Diseño responsive: Debe verse perfectamente en desktop, tablet y móvil
+
+Botón de impresión: Incluir un botón visible (esquina superior derecha o zona destacada) que permita imprimir la página con window.print()
+
+Estilo profesional:
+
+Diseño limpio y moderno
+
+Tipografía legible (recomendado: Inter, Roboto o similar)
+
+Espaciado vertical adecuado entre secciones
+
+Jerarquía visual clara
+
+Optimizado para impresión:
+
+Al imprimir, ocultar navegación, botones y elementos decorativos
+
+Ajustar a formato A4
+
+Usar estilos @media print
+
+CONTENIDO COMPLETO DEL CV
+ENCABEZADO
+
+text
+RAFAEL IZQUIERDO BLANCO
+
+Consultor Estratégico | Startups & PYMES
+Estrategia · Tecnología · Go-to-Market · Operaciones · Financiación · Entornos Regulados
+
+Madrid | Disponibilidad nacional e internacional
+📧 info@rafaizquierdo.es | 🔗 LinkedIn
+PERFIL PROFESIONAL
+
+Ingeniero Industrial y Consultor Estratégico con más de 14 años de experiencia combinando consultoría, gestión ejecutiva y dirección de negocio. He trabajado tanto en entornos corporativos internacionales (SAP) como liderando empresas tecnológicas, donde he dirigido la definición de estrategia, optimización de ventas, ejecución operativa, automatización y gestión de financiación pública.
+
+Aporto una combinación poco habitual de visión estratégica, capacidad analítica y ejecución práctica, con experiencia real en toma de decisiones bajo presión y gestión de clientes, inversores y stakeholders diversos. Especializado en trabajar con startups y pymes que necesitan foco, estructura y resultados.
+
+ÁREAS DE ESPECIALIZACIÓN
+
+Consultoría estratégica para startups y pymes
+
+Go-to-Market y ventas B2B
+
+Optimización de procesos y operaciones
+
+Automatización e IA aplicada a negocio
+
+Gestión de subvenciones y financiación pública
+
+Trabajo en entornos regulados
+
+Relación con clientes, inversores y dirección
+
+EXPERIENCIA PROFESIONAL
+
+Director General (CEO) – V-Vision (INNOTEC VISION AVANZADA XR, SL)
+
+2017 – Actualidad | HealthTech / Software
+
+Startup tecnológica especializada en soluciones software para el sector salud.
+
+Lidero la definición de estrategia, modelo de negocio y propuesta de valor.
+
+Acompaño el desarrollo de producto y alineándolo con necesidades reales del mercado.
+
+Diseño y ejecuto el Go-to-Market B2B, trabajando directamente en ventas.
+
+He captado financiación privada (pre-seed y seed) con inversores nacionales e internacionales.
+
+He obtenido más de 300.000 € de subvenciones públicas, destacando un CDTI NEOTEC.
+
+Lideré la obtención de la licencia de fabricante de producto sanitario e implantando ISO 13485 y recientemente la hemos revalidado.
+
+He gestionado situaciones críticas de tesorería y negociando soluciones financieras para garantizar la continuidad de la empresa.
+
+Estoy coordinando equipos pequeños y multidisciplinares en contextos de alta exigencia.
+
+Logros clave
+
+Captación de inversión privada total de 300.000€ en fases de constitución, pre-seed y seed por parte de fondos de inversión y business angels.
+
+Resolución de una crisis de liquidez mediante la negociación de un aval de 60.000 € y reestructuración de pagos.
+
+Obtención de licencia sanitaria en una empresa de 3 personas, sin experiencia previa y en contexto COVID y su renovación en diciembre de 2025.
+
+Consultor Tecnológico / Ingeniero de Soporte & Innovation Lead – SAP España
+
+2011 – 2018
+
+Trabajo en entornos corporativos internacionales con clientes enterprise.
+
+Resolución de incidencias críticas y coordinación con equipos globales EMEA.
+
+Participación en iniciativas de innovación y mejora continua.
+
+Elaboración de documentación técnica y optimización de procesos internos.
+
+Mentoría a nuevos empleados y liderazgo en comunicación interna.
+
+Perito Técnico de Vehículos – Actividad independiente
+
+Elaboración de informes periciales técnicos de vehículos.
+
+Análisis de averías, defectos y responsabilidades técnicas.
+
+Comparecencia en juicio para defensa técnica de informes.
+
+TIPOS DE PROYECTOS QUE PUEDO LIDERAR
+
+Diseño y ejecución de planes de crecimiento para startups y PYMES tecnológicas.
+
+Proyectos de optimización de procesos, automatización operativa e implementación de herramientas de negocio con impacto directo en resultados.
+
+Gestión integral de convocatorias de financiación pública y estrategias de captación de inversión.
+
+Liderazgo de proyectos de Go-to-Market, estrategia comercial B2B y desarrollo de producto orientado a cliente.
+
+Proyectos de cumplimiento regulatorio (ISO, certificaciones sanitarias) en contextos de alta exigencia.
+
+Análisis de averías, defectos y responsabilidades técnicas.
+
+Comparecencia en juicio para defensa técnica de informes.
+
+FORMACIÓN
+
+Ingeniero Industrial, Universidad Politécnica de Madrid
+
+Máster en Ingeniería de Vehículos Híbridos y Eléctricos, UPM
+
+Máster en Emprendimiento, Deusto Business School (proyecto ganador)
+
+SaaS Sales – Winning by Design
+
+COMPETENCIAS CLAVE
+
+Análisis estratégico y toma de decisiones
+
+Estructuración de problemas complejos
+
+Ventas consultivas B2B
+
+Automatización y mejora de procesos
+
+Gestión de clientes y stakeholders
+
+Comunicación clara con perfiles técnicos y no técnicos
+
+Trabajo en entornos de incertidumbre
+
+HERRAMIENTAS
+
+CRM & Marketing Automation: HubSpot, ActiveCampaign
+
+Automatización & Productividad: Zapier, Airtable
+
+IA aplicada a negocio: ChatGPT API, Replit
+
+Documentación y gestión del conocimiento: Confluence
+
+Presentaciones y material visual: Canva
+
+IDIOMAS
+
+Inglés: nivel avanzado (entornos internacionales de negocio, inversión y consultoría)
+
+EJEMPLO DE CSS PARA IMPRESIÓN
+css
+/* Estilos para impresión */
+@media print {
+  /* Ocultar elementos no necesarios */
+  button, nav, header, footer, .no-print {
+    display: none !important;
+  }
+  
+  /* Ajustar márgenes */
+  body {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Evitar saltos de página inapropiados */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  ul, section {
+    page-break-inside: avoid;
+  }
+  
+  /* Usar toda la página */
+  .cv-container {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
+RECOMENDACIONES ADICIONALES
+Usar una paleta de colores profesional (azul corporativo, gris oscuro, negro)
+
+Añadir iconos sutiles para cada sección (opcional)
+
+Implementar un scroll suave entre secciones
+
+El botón de impresión debe tener la clase .no-print para ocultarse al imprimir
+
+Considerar añadir un meta tag para compartir en redes sociales
