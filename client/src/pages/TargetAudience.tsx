@@ -23,6 +23,21 @@ const fadeInUp = {
 };
 
 export default function TargetAudience() {
+  const audienceItems = [
+    "Empresas tecnológicas o industriales que necesitan construir, no solo mantener.",
+    "Scale‑ups que quieren ordenar visión, producto y ventas antes de la siguiente fase de crecimiento o ronda.",
+    "Fundadores y Boards que buscan un perfil senior con autonomía, criterio y mentalidad de ownership, no un \"empleado más\"."
+  ];
+
+  const problemItems = [
+    "La empresa tiene visión, pero no un plan claro",
+    "Se trabaja mucho, pero no se avanza",
+    "Las ventas son inconsistentes o dependen del fundador",
+    "Hay demasiadas tareas manuales y poca automatización",
+    "La tecnología no se traduce en valor comercial",
+    "Se necesita financiación pública, pero no se sabe por dónde empezar"
+  ];
+
   return (
     <section id="target-audience" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,25 +48,40 @@ export default function TargetAudience() {
           viewport={{ once: true, margin: "-100px" }}
           variants={containerAnimation}
         >
+          {/* A quién ayudo */}
+          <motion.div variants={fadeInUp} className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              A quién ayudo
+            </h2>
+            <ul className="space-y-3 text-lg">
+              {audienceItems.map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-gray-700">
+                  <span className="text-accent mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Qué problemas ayudo a resolver */}
           <motion.div variants={fadeInUp} className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Para quién tiene sentido trabajar conmigo
+              Qué problemas ayudo a resolver
             </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Mis clientes suelen llegar cuando:
+            </p>
+            <ul className="space-y-3 text-lg">
+              {problemItems.map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-gray-700">
+                  <span className="text-accent mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </motion.div>
 
-          <motion.div variants={fadeInUp} className="space-y-4 text-lg">
-            <p className="text-gray-700">
-              – Empresas tecnológicas o industriales que necesitan construir, no solo mantener.
-            </p>
-            <p className="text-gray-700">
-              – Scale‑ups que quieren ordenar visión, producto y ventas antes de la siguiente fase de crecimiento o ronda.
-            </p>
-            <p className="text-gray-700">
-              – Fundadores y Boards que buscan un perfil senior con autonomía, criterio y mentalidad de ownership, no un "empleado más".
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeInUp} className="mt-10">
+          <motion.div variants={fadeInUp}>
             <p className="text-lg text-gray-800 font-medium">
               No busco estabilidad pasiva. Busco impacto, responsabilidad y resultados en entornos donde haya ambición y capacidad real de decisión.
             </p>
