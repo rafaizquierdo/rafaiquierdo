@@ -75,11 +75,20 @@ export default function About() {
                 Mi arquetipo es Estratega–Constructor: visión + ejecución, pensamiento sistémico y baja tolerancia a la ineficiencia. Me muevo con naturalidad entre el Board, el equipo técnico y el cliente final.
               </p>
               
-              <div className="pt-6 space-y-2">
-                <p className="text-gray-700">– Paso firme, visión a largo plazo y foco en resultados.</p>
-                <p className="text-gray-700">– Confianza, responsabilidad personal y resolución por encima del victimismo.</p>
-                <p className="text-gray-700">– Directo, honesto, poco político y muy poco amigo de la burocracia vacía.</p>
-              </div>
+              <ul className="pt-6 space-y-2">
+                <li className="flex items-start gap-3 text-gray-700">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Paso firme, visión a largo plazo y foco en resultados.</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-700">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Confianza, responsabilidad personal y resolución por encima del victimismo.</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-700">
+                  <span className="text-accent mt-1">•</span>
+                  <span>Directo, honesto, poco político y muy poco amigo de la burocracia vacía.</span>
+                </li>
+              </ul>
             </motion.div>
           </div>
         </motion.div>
