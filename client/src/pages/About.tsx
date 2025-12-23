@@ -9,17 +9,6 @@ export default function About() {
       transition: { duration: 0.6 }
     }
   };
-  
-  const skills = [
-    "Transformación digital",
-    "Estrategia empresarial",
-    "Innovación",
-    "Sector salud",
-    "Tecnología",
-    "Automatización",
-    "Ventas",
-    "IA generativa"
-  ];
 
   return (
     <section id="about" className="py-20 md:py-28 bg-white">
@@ -63,13 +52,13 @@ export default function About() {
                   <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
                 </svg>
-                Emprendedor
+                Ejecutivo tecnológico
               </div>
               <div className="flex items-center text-primary px-4 py-2 bg-gray-50 rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
                 </svg>
-                Co-Fundador de V-Vision
+                Constructor de negocio
               </div>
             </motion.div>
             
@@ -79,33 +68,17 @@ export default function About() {
               variants={fadeInUp}
             >
               <p className="text-justify">
-                Soy ingeniero, emprendedor y Co-Fundador de V-Vision, una empresa que hace realidad soluciones innovadoras en el ámbito de la salud visual.
+                Ingeniero Industrial y ejecutivo tecnológico con más de 14 años de experiencia en producto, ventas y dirección general. He liderado startups desde cero hasta su escalado, captando inversión, construyendo equipos y lanzando productos regulados en el sector salud.
               </p>
               
               <p className="text-justify">
-                A lo largo de mi carrera, he recorrido el exigente proceso de transformar una idea en un negocio que genera ingresos. He levantado rondas de inversión, conseguido financiación de fondos y business angels, y he recibido subvenciones como Neotec.
+                Mi arquetipo es Estratega–Constructor: visión + ejecución, pensamiento sistémico y baja tolerancia a la ineficiencia. Me muevo con naturalidad entre el Board, el equipo técnico y el cliente final.
               </p>
               
-              <p className="text-justify">
-                No me vas a encontrar aquí vendiendo recetas mágicas, ni dándote consejos no solicitados. Lo que sé hacer lo hago con pasión, y lo que no, lo reconozco sin rodeos.
-              </p>
-              
-              <p className="text-justify">
-                Mi objetivo es ayudar a aquellos que se atreven a desafiar la inercia y el miedo al cambio.
-              </p>
-              
-              <div className="pt-6">
-                <div className="inline-flex flex-wrap gap-2">
-                  {skills.map((skill, index) => (
-                    <motion.span 
-                      key={index}
-                      className="px-3 py-1 bg-gray-100 text-primary rounded-full text-sm"
-                      whileHover={{ y: -2, backgroundColor: 'rgb(243, 244, 246)' }}
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </div>
+              <div className="pt-6 space-y-2">
+                <p className="text-gray-700">– Paso firme, visión a largo plazo y foco en resultados.</p>
+                <p className="text-gray-700">– Confianza, responsabilidad personal y resolución por encima del victimismo.</p>
+                <p className="text-gray-700">– Directo, honesto, poco político y muy poco amigo de la burocracia vacía.</p>
               </div>
             </motion.div>
           </div>

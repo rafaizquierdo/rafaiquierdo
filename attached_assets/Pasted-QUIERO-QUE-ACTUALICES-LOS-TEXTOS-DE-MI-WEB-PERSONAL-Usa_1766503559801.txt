@@ -1,0 +1,136 @@
+QUIERO QUE ACTUALICES LOS TEXTOS DE MI WEB PERSONAL.  
+Usa este contenido NUEVO para sustituir los textos actuales de cada sección de https://rafaizquierdo.es.  
+Respeta la estructura HTML y los estilos; solo cambia el copy.
+
+-------------------------
+HERO / INICIO
+-------------------------
+
+TÍTULO PRINCIPAL (reemplazar la frase “No hay nada más difícil…”):
+
+Soy Rafael Izquierdo, constructor de negocio tecnológico y Co‑Fundador de V‑Vision.
+
+PÁRRAFO BAJO EL TÍTULO (reemplazar el bloque de advertencia y explicación inicial):
+
+Conecto tecnología, ventas y operaciones para transformar innovación en negocio real.  
+No ofrezco soluciones mágicas ni recetas genéricas. Aporto criterio, visión y ejecución allí donde hay que unir tecnología, personas y resultados.
+
+SUBTÍTULO / CLAIM BAJO EL NOMBRE:
+
+CEO | Dirección de producto y ventas | Fractional COO / CRO para empresas tecnológicas y scale‑ups.
+
+PÁRRAFO DE ENCUADRE (reemplazar el texto “En esta web no vas a encontrar un curso…” y siguientes):
+
+Si buscas a alguien que “mantenga lo que ya funciona”, no soy la persona adecuada.  
+Si necesitas construir, escalar o reorganizar un negocio tecnológico, entonces sí tiene sentido que hablemos.
+
+CTA PRINCIPAL (reutilizar el botón que ya abre el email, solo cambiar el texto):
+
+Hablemos de tu negocio
+
+-------------------------
+SECCIÓN “¿QUIÉN SOY?”
+-------------------------
+
+TÍTULO: ¿Quién soy?
+
+SUBTÍTULO CORTO BAJO EL TÍTULO:
+
+Ingeniero  
+Ejecutivo tecnológico  
+Constructor de negocio  
+
+PÁRRAFOS (reemplazar el texto actual de “Soy ingeniero, emprendedor y Co‑Fundador de V‑Vision…”):
+
+Ingeniero Industrial y ejecutivo tecnológico con más de 14 años de experiencia en producto, ventas y dirección general. He liderado startups desde cero hasta su escalado, captando inversión, construyendo equipos y lanzando productos regulados en el sector salud.
+
+Mi arquetipo es Estratega–Constructor: visión + ejecución, pensamiento sistémico y baja tolerancia a la ineficiencia. Me muevo con naturalidad entre el Board, el equipo técnico y el cliente final.
+
+LISTA DE VALORES / ESTILO (reemplazar la lista de “Transformación digital / Estrategia…”):
+
+– Paso firme, visión a largo plazo y foco en resultados.  
+– Confianza, responsabilidad personal y resolución por encima del victimismo.  
+– Directo, honesto, poco político y muy poco amigo de la burocracia vacía.
+
+-------------------------
+SECCIÓN “¿QUÉ PUEDO APORTAR A TU PROYECTO?”
+-------------------------
+
+CAMBIAR EL TÍTULO A:
+
+Lo que aporto a tu empresa
+
+PÁRRAFO INTRODUCTORIO (sustituir el primer párrafo genérico):
+
+Ayudo a empresas tecnológicas e industriales a ordenar visión, producto y ventas, construyendo procesos y automatización para escalar de forma eficiente.
+
+BLOQUE 1 – DIRECCIÓN Y CONSTRUCCIÓN DE NEGOCIO  
+(Reemplazar el contenido de “Emprendimiento y Estrategia”):
+
+Título: Dirección y construcción de negocio
+
+Texto:
+
+Transformo visión tecnológica en producto vendible y un go‑to‑market claro.  
+Diseño y alineo estrategia, operaciones y ventas B2B tech.  
+Trabajo cerca del Board en decisiones de crecimiento, inversión y foco.
+
+BLOQUE 2 – PRODUCTO, VENTAS Y AUTOMATIZACIÓN  
+(Reemplazar el contenido de “Tecnología y Transformación Digital”):
+
+Título: Producto, ventas y automatización
+
+Texto:
+
+Defino y lidero producto en sectores de tecnología aplicada, salud, IA y automatización.  
+Construyo procesos de venta y pipelines B2B realistas, medibles y escalables.  
+Integro IA y automatización para reducir fricción operativa y liberar capacidad del equipo fundador.
+
+BLOQUE 3 – ROLES EN LOS QUE MÁS VALOR APORTO  
+(Reemplazar el contenido de “Ventas y Marketing”):
+
+Título: Roles en los que más valor aporto
+
+Texto en una sola línea o lista:
+
+Product / Business Owner senior · Director Comercial B2B Tech · COO / Head of Operations · Fractional COO / CRO · Advisor / Consejero en startups tecnológicas.
+
+PÁRRAFO DE CIERRE DE LA SECCIÓN:
+
+Si lo que necesitas está alineado con esto, hablemos y veamos cómo puedo aportar en tu siguiente fase de crecimiento.
+
+-------------------------
+SECCIÓN NUEVA: “PARA QUIÉN TIENE SENTIDO TRABAJAR CONMIGO”
+-------------------------
+
+Añade una sección nueva antes de “Lo que dicen sobre mí” con este contenido:
+
+Título: Para quién tiene sentido trabajar conmigo
+
+Texto / bullets:
+
+– Empresas tecnológicas o industriales que necesitan construir, no solo mantener.  
+– Scale‑ups que quieren ordenar visión, producto y ventas antes de la siguiente fase de crecimiento o ronda.  
+– Fundadores y Boards que buscan un perfil senior con autonomía, criterio y mentalidad de ownership, no un “empleado más”.
+
+Frase final de esta sección:
+
+No busco estabilidad pasiva. Busco impacto, responsabilidad y resultados en entornos donde haya ambición y capacidad real de decisión.
+
+-------------------------
+SECCIÓN “CONTACTO” / CTA FINAL
+-------------------------
+
+En el bloque final de contacto, sustituir el texto por:
+
+Puedes escribirme directamente a mi correo electrónico. Si estás construyendo o escalando un negocio tecnológico y necesitas alinear visión, producto, ventas y operaciones, escríbeme y vemos si tiene sentido que trabajemos juntos.
+
+Mantén el botón de email tal como está (solo cambia el texto visible a “Hablemos de tu negocio”).
+
+-------------------------
+FOOTER / CLAIM FINAL
+-------------------------
+
+Debajo de “Translating Innovation into Reality | Engineering - Automation - Sales”, añade esta frase o sustitúyela por:
+
+Constructor de negocio tecnológico que une tecnología, personas y resultados.
