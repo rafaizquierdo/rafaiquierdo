@@ -223,7 +223,7 @@ export default function CV() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
-                  <span><strong>Máster en Ingeniería de Vehículos Híbridos y Eléctricos</strong>, UPM</span>
+                  <span><strong>Máster en Ingeniería de Vehículos Híbridos y Eléctricos</strong>, INSIA - Universidad Politécnica de Madrid</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-1">•</span>
