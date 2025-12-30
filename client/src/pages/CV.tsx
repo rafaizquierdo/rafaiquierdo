@@ -34,7 +34,7 @@ export default function CV() {
                 Consultor Estratégico | Startups & PYMES
               </p>
               <p className="text-gray-600 mb-4 print:text-sm print:mb-2">
-                Estrategia · Tecnología · Go-to-Market · Operaciones · Financiación · Entornos Regulados
+                Estrategia · Tecnología · Go-to-Market · Operaciones · Financiación
               </p>
               <div className="flex flex-wrap gap-4 text-gray-600 print:text-sm print:gap-2">
                 <span className="flex items-center gap-1">
