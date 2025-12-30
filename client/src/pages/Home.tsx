@@ -88,14 +88,6 @@ export default function Home() {
                   </p>
                 </motion.div>
                 
-                <motion.div 
-                  className="mb-8"
-                  variants={fadeInUp}
-                >
-                  <p className="text-lg text-accent font-medium">
-                    CEO | Dirección de producto y ventas | Fractional COO / CRO para empresas tecnológicas y scale‑ups.
-                  </p>
-                </motion.div>
                 
                 <motion.div 
                   className="space-y-6 text-lg"
