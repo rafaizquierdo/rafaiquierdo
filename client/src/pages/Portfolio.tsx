@@ -20,22 +20,22 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "V-Vision finalista en la convocatoria de 2022 de Púlsar by Roche + Wayra",
-    description: "V-Vision fue finalista del programa Púlsar by Roche, la aceleradora de Roche y Wayra enfocada en impulsar la innovación en oftalmología y otras áreas de la salud, seleccionada entre más de 50 startups tecnológicas con soluciones listas para validar en entornos clínicos. Gracias a esta selección, V‑Vision accedió al coworking de Wayra Madrid, así como a formaciones, eventos y sesiones con expertos del ecosistema de Telefónica y Roche, lo que fortaleció tanto la estrategia de crecimiento como la visibilidad de la compañía en el sector healthtech.",
-    year: "2022",
-    media: [
-      { type: "image", src: pulsarImage },
-      { type: "video", src: "https://www.youtube.com/embed/aHuMg2gAE5s?start=35" }
-    ]
-  },
-  {
-    id: 2,
     title: "Ronda Pre-Seed: Entrada de EASO Ventures y Aceleración con el programa de Berri-Up",
     description: "V‑Vision fue una de las tres startups ganadoras de la 11ª convocatoria del programa de aceleración de BerriUp, lo que le permitió acceder a financiación en fase pre‑seed y a un proceso de aceleración de 4 meses, en el marco del impulso inversor asociado al programa (EASO Ventures).",
     year: "2019",
     media: [
       { type: "image", src: berriupImage },
       { type: "video", src: "https://www.youtube.com/embed/smrS_yy8q6U?start=19" }
+    ]
+  },
+  {
+    id: 2,
+    title: "V-Vision finalista en la convocatoria de 2022 de Púlsar by Roche + Wayra",
+    description: "V-Vision fue finalista del programa Púlsar by Roche, la aceleradora de Roche y Wayra enfocada en impulsar la innovación en oftalmología y otras áreas de la salud, seleccionada entre más de 50 startups tecnológicas con soluciones listas para validar en entornos clínicos. Gracias a esta selección, V‑Vision accedió al coworking de Wayra Madrid, así como a formaciones, eventos y sesiones con expertos del ecosistema de Telefónica y Roche, lo que fortaleció tanto la estrategia de crecimiento como la visibilidad de la compañía en el sector healthtech.",
+    year: "2022",
+    media: [
+      { type: "image", src: pulsarImage },
+      { type: "video", src: "https://www.youtube.com/embed/aHuMg2gAE5s?start=35" }
     ]
   }
 ];
