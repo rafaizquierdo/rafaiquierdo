@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import CV from "@/pages/CV";
+import Portfolio from "@/pages/Portfolio";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useScrollToHash } from "./lib/useScrollToHash";
@@ -77,6 +78,7 @@ function Router() {
           <Route path="/blog" component={Blog} />
           <Route path="/blog/:postName" component={BlogPost} />
           <Route path="/cv" component={CV} />
+          <Route path="/portfolio" component={Portfolio} />
           <Route component={NotFound} />
         </Switch>
       </main>
