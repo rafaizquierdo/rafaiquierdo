@@ -12,27 +12,11 @@ interface PortfolioItem {
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Proyecto de ejemplo 1",
-    description: "Descripción del proyecto. Aquí se explicará el contexto, los retos y los resultados obtenidos. Este texto puede ser más largo para proyectos complejos donde haya mucho que contar.",
-    role: "Consultor Estratégico",
-    mediaType: "image",
-    mediaSrc: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop"
-  },
-  {
-    id: 2,
-    title: "Proyecto de ejemplo 2",
-    description: "Otro proyecto con diferentes características. Aquí se pueden destacar los logros específicos, metodologías aplicadas y el impacto en el negocio del cliente.",
-    role: "Director de Operaciones",
-    mediaType: "image",
-    mediaSrc: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
-  },
-  {
-    id: 3,
-    title: "Proyecto de ejemplo 3",
-    description: "Un tercer caso de estudio que demuestra experiencia en un área diferente. Cada entrada del portfolio muestra versatilidad y capacidad de adaptación a distintos contextos empresariales.",
-    role: "Asesor de Startups",
-    mediaType: "image",
-    mediaSrc: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop"
+    title: "V-Vision finalista en la convocatoria de 2022 de Púlsar by Roche + Wayra",
+    description: "V-Vision fue finalista del programa Púlsar by Roche, la aceleradora de Roche y Wayra enfocada en impulsar la innovación en oftalmología y otras áreas de la salud, seleccionada entre más de 50 startups tecnológicas con soluciones listas para validar en entornos clínicos. Gracias a esta selección, V‑Vision accedió al coworking de Wayra Madrid, así como a formaciones, eventos y sesiones con expertos del ecosistema de Telefónica y Roche, lo que fortaleció tanto la estrategia de crecimiento como la visibilidad de la compañía en el sector healthtech.",
+    role: "2022",
+    mediaType: "video",
+    mediaSrc: "https://www.youtube.com/embed/aHuMg2gAE5s?start=35"
   }
 ];
 
@@ -102,10 +86,12 @@ export default function Portfolio() {
                       />
                     )}
                     {item.mediaType === "video" && (
-                      <video
+                      <iframe
                         src={item.mediaSrc}
-                        className="w-full h-64 md:h-80 object-cover"
-                        controls
+                        className="w-full h-64 md:h-80"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title={item.title}
                       />
                     )}
                   </motion.div>
