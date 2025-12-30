@@ -61,7 +61,7 @@ export default function Home() {
                   className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8 text-primary"
                   variants={fadeInUp}
                 >
-                  Soy Rafael Izquierdo, constructor de negocio tecnológico y Co‑Fundador de V‑Vision.
+                  Soy Rafael Izquierdo, consultor estratégico para startups y pymes
                 </motion.h1>
                 
                 {/* Imagen en pantallas pequeñas */}
