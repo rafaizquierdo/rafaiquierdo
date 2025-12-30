@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import pulsarImage from "@assets/Captura_de_pantalla_2025-12-30_a_las_17.26.41_1767112052108.png";
+import berriupImage from "@assets/spri-emprendimiento-berriup-codecontract-gravi-v-vision_1767119703100.jpg";
 
 interface MediaItem {
   type: "image" | "video";
@@ -25,6 +26,16 @@ const portfolioItems: PortfolioItem[] = [
     media: [
       { type: "image", src: pulsarImage },
       { type: "video", src: "https://www.youtube.com/embed/aHuMg2gAE5s?start=35" }
+    ]
+  },
+  {
+    id: 2,
+    title: "Ronda Pre-Seed: Entrada de EASO Ventures y Aceleración con el programa de Berri-Up",
+    description: "V‑Vision fue una de las tres startups ganadoras de la 11ª convocatoria del programa de aceleración de BerriUp, lo que le permitió acceder a financiación en fase pre‑seed y a un proceso de aceleración de 4 meses, en el marco del impulso inversor asociado al programa (EASO Ventures).",
+    year: "2019",
+    media: [
+      { type: "image", src: berriupImage },
+      { type: "video", src: "https://www.youtube.com/embed/smrS_yy8q6U?start=19" }
     ]
   }
 ];
