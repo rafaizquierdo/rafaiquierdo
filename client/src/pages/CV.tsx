@@ -25,8 +25,8 @@ export default function CV() {
           </button>
 
           <div className="p-8 md:p-12 print:p-6">
-            {/* Header */}
-            <header className="border-b border-gray-200 pb-8 mb-8 print:pb-4 print:mb-4">
+            {/* Header del CV */}
+            <div className="border-b border-gray-200 pb-8 mb-8 print:pb-4 print:mb-4">
               <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2 print:text-2xl">
                 RAFAEL IZQUIERDO BLANCO
               </h1>
@@ -38,19 +38,19 @@ export default function CV() {
               </p>
               <div className="flex flex-wrap gap-4 text-gray-600 print:text-sm print:gap-2">
                 <span className="flex items-center gap-1">
-                  <MapPin className="h-4 w-4" />
+                  <MapPin className="h-4 w-4 print:h-3 print:w-3" />
                   Madrid | Disponibilidad nacional e internacional
                 </span>
-                <a href="mailto:info@rafaizquierdo.es" className="flex items-center gap-1 hover:text-accent transition-colors">
-                  <Mail className="h-4 w-4" />
+                <a href="mailto:info@rafaizquierdo.es" className="flex items-center gap-1 hover:text-accent transition-colors print:text-gray-600">
+                  <Mail className="h-4 w-4 print:h-3 print:w-3" />
                   info@rafaizquierdo.es
                 </a>
-                <a href="https://www.linkedin.com/in/rafaizquierdo/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-accent transition-colors">
-                  <Linkedin className="h-4 w-4" />
-                  LinkedIn
+                <a href="https://www.linkedin.com/in/rafaizquierdo/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-accent transition-colors print:text-gray-600">
+                  <Linkedin className="h-4 w-4 print:h-3 print:w-3" />
+                  linkedin.com/in/rafaizquierdo
                 </a>
               </div>
-            </header>
+            </div>
 
             {/* Perfil Profesional */}
             <section className="mb-8 print:mb-4">
