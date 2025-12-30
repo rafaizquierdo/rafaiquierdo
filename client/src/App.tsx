@@ -88,7 +88,7 @@ function Router() {
 function App() {
   // Set title
   useEffect(() => {
-    document.title = "Rafael Izquierdo | Co-Fundador de V-Vision";
+    document.title = "Rafael Izquierdo | Consultor Estratégico";
   }, []);
 
   return (
