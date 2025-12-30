@@ -83,7 +83,7 @@ export default function TargetAudience() {
 
           <motion.div variants={fadeInUp}>
             <p className="text-lg text-gray-800 font-medium">
-              No busco estabilidad pasiva. Busco impacto, responsabilidad y resultados en entornos donde haya ambición y capacidad real de decisión.
+              Me implico en organizaciones que quieren convertir la estrategia en acción: menos powerpoint, más decisiones, procesos y resultados visibles en el negocio.
             </p>
           </motion.div>
         </motion.div>
