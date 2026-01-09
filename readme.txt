@@ -42,7 +42,7 @@ en /portfolio. Contiene entradas cronológicas de proyectos con:
 
 ENTRADAS ACTUALES:
 
-1. 2019 - Ronda Pre-Seed: Entrada de EASO Ventures y Aceleración con BerriUp
+1. 2020 - Ronda Pre-Seed: Entrada de EASO Ventures y Aceleración con BerriUp
    - V-Vision ganadora de la 11ª convocatoria de BerriUp
    - Financiación pre-seed y aceleración de 4 meses
    - Carrusel con imagen y video de YouTube
