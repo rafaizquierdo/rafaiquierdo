@@ -22,7 +22,7 @@ const portfolioItems: PortfolioItem[] = [
     id: 1,
     title: "Ronda Pre-Seed: Entrada de EASO Ventures y Aceleración con el programa de Berri-Up",
     description: "V‑Vision fue una de las tres startups ganadoras de la 11ª convocatoria del programa de aceleración de BerriUp, lo que le permitió acceder a financiación en fase pre‑seed y a un proceso de aceleración de 4 meses, en el marco del impulso inversor asociado al programa (EASO Ventures).",
-    year: "2019",
+    year: "2020",
     media: [
       { type: "image", src: berriupImage },
       { type: "video", src: "https://www.youtube.com/embed/smrS_yy8q6U?start=19" }
