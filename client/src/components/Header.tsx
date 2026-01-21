@@ -119,10 +119,9 @@ export default function Header() {
             </Link>
             <Link 
               href="/businessos"
-              className="inline-flex items-center justify-center px-5 py-2 bg-black rounded-lg font-bold text-sm hover:bg-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+              className="btn-bos"
             >
-              <span className="text-[#1a5f7a]">Business</span>
-              <span className="text-[#ff6b35]">OS</span>
+              <span className="btn-bos__text">BusinessOS</span>
             </Link>
             <a
               href={getNavUrl("contact")}
@@ -190,10 +189,9 @@ export default function Header() {
               <Link 
                 href="/businessos"
                 onClick={closeMenu}
-                className="inline-flex items-center justify-center px-4 py-2 bg-black rounded-lg font-bold text-sm mt-2"
+                className="btn-bos mt-2"
               >
-                <span className="text-[#1a5f7a]">Business</span>
-                <span className="text-[#ff6b35]">OS</span>
+                <span className="btn-bos__text">BusinessOS</span>
               </Link>
               <a
                 href={getNavUrl("contact")}

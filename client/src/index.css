@@ -66,6 +66,56 @@ html {
   @apply transition-all duration-300 ease-in-out;
 }
 
+/* BusinessOS Button Styles */
+:root {
+  --bos-hi: #FFD95D;
+  --bos-hi2: #FFD25B;
+  --bos-mid: #FEAE53;
+  --bos-mid2: #FE954F;
+  --bos-deep: #F89048;
+  --bos-stroke: #745B16;
+  --bos-shadow: #43381A;
+  --bos-bg: #181818;
+}
+
+.btn-bos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bos-bg);
+  border: 2px solid var(--bos-stroke);
+  border-radius: 10px;
+  padding: 6px 14px;
+  box-shadow: 0 4px 0 var(--bos-shadow), 0 6px 12px rgba(0,0,0,.35);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-bos:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--bos-shadow), 0 10px 18px rgba(0,0,0,.4);
+}
+
+.btn-bos__text {
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  line-height: 1;
+  background: linear-gradient(180deg,
+    var(--bos-hi) 0%,
+    var(--bos-hi2) 22%,
+    var(--bos-mid) 55%,
+    var(--bos-mid2) 78%,
+    var(--bos-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--bos-stroke);
+  text-shadow: 2px 2px 0 var(--bos-shadow);
+}
+
 @media print {
   body {
     background: white !important;
