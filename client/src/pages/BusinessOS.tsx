@@ -145,17 +145,17 @@ export default function BusinessOS() {
           variants={containerAnimation}
         >
           <motion.h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 italic"
             variants={fadeInUp}
           >
             <span className="text-white">Business</span>
-            <span className="bos-golden-text-lg">OS</span>
+            <span className="text-[#F5C842]">OS</span>
           </motion.h1>
           <motion.p 
             className="text-xl md:text-2xl mb-6 text-gray-300 font-light max-w-3xl mx-auto"
             variants={fadeInUp}
           >
-            Sistema operativo empresarial que convierte<br className="hidden md:block" />
+            <span className="text-[#F5C842] font-bold">Sistema operativo</span> empresarial que convierte<br className="hidden md:block" />
             caos en procesos, y procesos en resultados.
           </motion.p>
           <motion.p 
@@ -206,7 +206,7 @@ export default function BusinessOS() {
             variants={containerAnimation}
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-white mb-12"
+              className="text-3xl md:text-4xl font-bold text-white mb-12 italic"
               variants={fadeInUp}
             >
               He estado en tu silla (y sé lo que duele)
@@ -238,20 +238,20 @@ export default function BusinessOS() {
             variants={containerAnimation}
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-white mb-12 text-center"
+              className="text-3xl md:text-4xl font-bold text-white mb-12 text-center italic"
               variants={fadeInUp}
             >
-              Las 3 Pilares del Business <span className="bos-golden-text">OS</span>
+              Las 3 Pilares del Business <span className="text-[#F5C842]">OS</span>
             </motion.h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
                 <motion.div
                   key={index}
-                  className="bg-[#252525] p-8 rounded-xl hover:-translate-y-2 transition-all duration-300"
+                  className="bg-[#252525] p-8 rounded-xl border-l-4 border-[#F5C842] hover:-translate-y-2 transition-all duration-300"
                   variants={fadeInUp}
                 >
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    {service.name} <span className="bos-golden-text">OS</span>
+                  <h3 className="text-2xl font-bold text-white mb-3 italic">
+                    {service.name} <span className="text-[#F5C842]">OS</span>
                   </h3>
                   <p className="text-gray-500 text-sm mb-6 font-medium">{service.subtitle}</p>
                   
@@ -313,7 +313,7 @@ export default function BusinessOS() {
             variants={containerAnimation}
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-white mb-12 text-center"
+              className="text-3xl md:text-4xl font-bold text-white mb-12 text-center italic"
               variants={fadeInUp}
             >
               Cómo trabajamos juntos
@@ -348,7 +348,7 @@ export default function BusinessOS() {
             variants={containerAnimation}
           >
             <motion.h2 
-              className="text-3xl md:text-4xl font-bold text-white mb-12 text-center"
+              className="text-3xl md:text-4xl font-bold text-white mb-12 text-center italic"
               variants={fadeInUp}
             >
               Modelo de trabajo: Setup + Suscripción
@@ -403,7 +403,7 @@ export default function BusinessOS() {
           variants={containerAnimation}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl font-bold text-white mb-6"
+            className="text-3xl md:text-4xl font-bold text-white mb-6 italic"
             variants={fadeInUp}
           >
             ¿Estás listo para crear orden y escalar?
@@ -415,11 +415,13 @@ export default function BusinessOS() {
             Vamos a convertir tu caos en un sistema que funciona mientras tú haces lo que realmente importa.
           </motion.p>
           <motion.a
-            href="mailto:info@rafaizquierdo.es?subject=Handshake%20BusinessOS&body=Hola%20Rafael,%0A%0AMe%20interesa%20conocer%20más%20sobre%20BusinessOS.%0A%0A(Cuéntame%20un%20poco%20sobre%20tu%20empresa%20y%20qué%20retos%20tienes)"
-            className="btn-bos inline-block"
+            href="https://calendar.app.google/RWWuqw9SQUpbK7P38"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-4 bg-[#1a1a1a] border-2 border-[#F5C842] rounded-xl text-[#F5C842] font-bold text-xl italic hover:bg-[#F5C842] hover:text-[#1a1a1a] transition-all duration-300"
             variants={fadeInUp}
           >
-            <span className="btn-bos__text text-xl">Agendar Handshake</span>
+            Agendar Handshake
           </motion.a>
         </motion.div>
       </section>
@@ -427,7 +429,7 @@ export default function BusinessOS() {
       {/* Footer */}
       <footer className="py-10 text-center border-t border-gray-800">
         <p className="text-sm text-gray-500">
-          © 2025 Rafael Izquierdo |{" "}
+          © 2026 Rafael Izquierdo |{" "}
           <a href="mailto:info@rafaizquierdo.es" className="text-[#F5C842] hover:underline">
             info@rafaizquierdo.es
           </a>
