@@ -20,6 +20,7 @@ PÁGINAS PRINCIPALES:
 - /blog/:postName: Artículos individuales del blog
 - /cv: Currículum vitae completo con opción de impresión optimizada para A4
 - /portfolio: Portfolio de proyectos (actualmente oculto de la navegación)
+- /businessos: Landing page del servicio BusinessOS (visible en navegación)
 
 SECCIONES DE LA HOME:
 1. Hero: Presentación como consultor estratégico para startups y pymes
@@ -114,11 +115,39 @@ BLOG:
 - Sintaxis resaltada para código
 
 ================================================================================
+SECCIÓN BUSINESSOS
+================================================================================
+
+Landing page completa del servicio BusinessOS accesible en /businessos.
+Botón destacado en el header con colores de marca (Teal #1a5f7a + Orange #ff6b35).
+
+SECCIONES DE BUSINESSOS:
+1. Hero: Presentación con gradiente oscuro y branding
+2. Highlights: 3 beneficios principales (menos tareas, más foco, ventas constantes)
+3. Experience: "He estado en tu silla" - credenciales y experiencia
+4. Services: Las 3 pilares (Back OS, Sales OS, Strategy OS) con:
+   - Qué resuelvo
+   - Qué te llevas
+   - Ejemplos típicos
+   - Caso de éxito V-Vision
+5. Process: Cómo trabajamos juntos (Handshake, Plan, Trabajo conjunto)
+6. Model: Setup + Suscripción mensual
+7. CTA: "Agendar Handshake" con mailto
+8. Footer propio
+
+COLORES BUSINESSOS:
+- Teal (Business): #1a5f7a
+- Orange (OS): #ff6b35
+- Dark BG Hero: #0a0e27
+- Botón CTA: #ff6b35
+
+================================================================================
 ÚLTIMAS MODIFICACIONES
 ================================================================================
 
 Fecha: Enero 2026
 
+- Implementada sección BusinessOS completa con landing page y botón en header
 - Creado archivo readme.txt con documentación del proyecto
 - Añadida sección Portfolio con carrusel de imágenes/videos
 - Entradas de portfolio ordenadas cronológicamente (2019, 2022)

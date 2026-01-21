@@ -117,6 +117,13 @@ export default function Header() {
             >
               CV
             </Link>
+            <Link 
+              href="/businessos"
+              className="inline-flex items-center justify-center px-5 py-2 bg-black rounded-lg font-bold text-sm hover:bg-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+            >
+              <span className="text-[#1a5f7a]">Business</span>
+              <span className="text-[#ff6b35]">OS</span>
+            </Link>
             <a
               href={getNavUrl("contact")}
               className="bg-accent text-white px-4 py-2 rounded-md hover:bg-accent/90 transition-link"
@@ -180,10 +187,18 @@ export default function Header() {
               >
                 CV
               </Link>
+              <Link 
+                href="/businessos"
+                onClick={closeMenu}
+                className="inline-flex items-center justify-center px-4 py-2 bg-black rounded-lg font-bold text-sm mt-2"
+              >
+                <span className="text-[#1a5f7a]">Business</span>
+                <span className="text-[#ff6b35]">OS</span>
+              </Link>
               <a
                 href={getNavUrl("contact")}
                 onClick={closeMenu}
-                className="block py-2 text-accent font-medium transition-link"
+                className="block py-2 text-accent font-medium transition-link mt-2"
               >
                 Contacto
               </a>
