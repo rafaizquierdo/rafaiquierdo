@@ -98,55 +98,25 @@ html {
 }
 
 .btn-bos__text {
-  font-weight: 800;
+  font-weight: 700;
   font-style: italic;
   letter-spacing: 0.3px;
   font-size: 18px;
   line-height: 1;
-  background: linear-gradient(180deg,
-    var(--bos-hi) 0%,
-    var(--bos-hi2) 22%,
-    var(--bos-mid) 55%,
-    var(--bos-mid2) 78%,
-    var(--bos-deep) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--bos-stroke);
-  text-shadow: 3px 3px 0 var(--bos-shadow);
+  color: #F5C842;
 }
 
-/* BusinessOS gradient text for headings */
-.bos-gradient-text {
-  font-weight: 800;
+/* BusinessOS flat golden text for headings */
+.bos-golden-text {
+  font-weight: 700;
   font-style: italic;
-  background: linear-gradient(180deg,
-    var(--bos-hi) 0%,
-    var(--bos-hi2) 22%,
-    var(--bos-mid) 55%,
-    var(--bos-mid2) 78%,
-    var(--bos-deep) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--bos-stroke);
-  text-shadow: 3px 3px 0 var(--bos-shadow);
+  color: #F5C842;
 }
 
-.bos-gradient-text-lg {
+.bos-golden-text-lg {
   font-weight: 800;
   font-style: italic;
-  background: linear-gradient(180deg,
-    var(--bos-hi) 0%,
-    var(--bos-hi2) 22%,
-    var(--bos-mid) 55%,
-    var(--bos-mid2) 78%,
-    var(--bos-deep) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-stroke: 3px var(--bos-stroke);
-  text-shadow: 4px 4px 0 var(--bos-shadow);
+  color: #F5C842;
 }
 
 @media print {
